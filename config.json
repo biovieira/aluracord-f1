@@ -1,5 +1,5 @@
 {
-    "name": "Aluracord - Matrix (biovieira)",
+    "name": "Aluracord - F1 (biovieira)",
     "theme": {
       "colors": {
         "primary": {
@@ -26,7 +26,7 @@
           "700": "#212931",
           "800": "#181F25",
           "900": "#101418",
-          "999": "#080A0C"
+          "999": "#B7D8E1"
         }
       }
     },

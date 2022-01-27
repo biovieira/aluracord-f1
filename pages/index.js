@@ -39,7 +39,7 @@ function Titulo(props) {
 
       <style jsx>{`
         ${Tag} {
-          color: ${appConfig.theme.colors.neutrals['000']};
+          color: ${appConfig.theme.colors.neutrals['900']};
           font-size: 24px;
           font-weight: 600;
         }
@@ -72,8 +72,8 @@ export default function PaginaInicial() {
           styleSheet={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             backgroundColor: appConfig.theme.colors.primary[500],
-            backgroundImage: 'url(https://cdn-1.motorsport.com/images/amp/0mbGdWA2/s1000/mclaren-mcl35m-with-gulf-liver.webp)',
-            backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
+            backgroundImage: 'url(https://www.f1mania.net/wp-content/uploads/2021/05/E1hlodMWEAEvkmz-scaled.jpg)',
+            backgroundRepeat: 'no-repeat', backgroundSize: 'cover'/*, backgroundBlendMode: 'multiply'*/,
           }}
         >
           <Box
@@ -88,7 +88,8 @@ export default function PaginaInicial() {
               width: '100%', maxWidth: '700px',
               borderRadius: '5px', padding: '32px', margin: '16px',
               boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-              backgroundColor: appConfig.theme.colors.neutrals[700],
+              opacity: 0.95,
+              backgroundColor: appConfig.theme.colors.neutrals[999],
             }}
           >
             {/* Formulário */}
@@ -100,7 +101,7 @@ export default function PaginaInicial() {
               }}
             >
               <Titulo tag="h2">Boas vindas de volta!</Titulo>
-              <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
+              <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[600] }}>
                 {appConfig.name}
               </Text>
   
@@ -144,12 +145,13 @@ export default function PaginaInicial() {
                 borderRadius: '10px',
                 flex: 1,
                 minHeight: '240px',
+                
               }}
             >
               <Image
                 styleSheet={{
                   borderRadius: '50%',
-                  marginBottom: '16px',
+                  marginBottom: '16px',                  
                 }}
                 src={`https://github.com/${username}.png`}
               />
